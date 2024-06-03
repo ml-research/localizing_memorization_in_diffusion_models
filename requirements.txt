@@ -1,0 +1,15 @@
+rtpt
+wandb
+transformers==4.38.2
+diffusers==0.27.1
+accelerate==0.28.0
+scipy==1.11.1
+pandas==2.2.1
+pyarrow==15.0.2
+jupyter==1.0.0
+matplotlib==3.8.4
+seaborn==0.13.2
+scikit-learn==1.4.1.post1
+torchmetrics==1.3.2
+git+https://github.com/openai/CLIP.git
+clean-fid
