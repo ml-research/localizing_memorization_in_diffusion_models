@@ -91,7 +91,6 @@ If you build upon our work, please don't forget to cite us.
 @inproceedings{hintersdorf2024nemo,
     title={Finding NeMo: Localizing Neurons Responsible For Memorization in Diffusion Models},
     author={Dominik Hintersdorf and Lukas Struppek and Kristian Kersting and Adam Dziedzic and Franziska Boenisch},
-    journal={arXiv preprint},
-    volume={arXiv:2406.02366},
+    booktitle = {Conference on Neural Information Processing Systems (NeurIPS)},
     year={2024}
 }
