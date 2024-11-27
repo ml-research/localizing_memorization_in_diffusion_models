@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Project page for our NeurIPS 2024 paper Finding NeMo: Localizing Neurons Responsible For Memorization in Diffusion Models">
+  <meta property="og:title" content="Finding NeMo"/>
+  <meta property="og:description" content="Finding NeMo: Localizing Neurons Responsible For Memorization in Diffusion Models (NeurIPS 2024)"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="memorization, diffusion, text-to-image, deep learning, computer vision, privacy">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Finding NeMo</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Finding NeMo: Localizing Neurons Responsible For Memorization in Diffusion Models</h1>
+            <img src="static/images/NeurIPS-logo.svg" alt="NeurIPS" style="width:40%;"/>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://d0mih.github.io/" target="_blank">Dominik Hintersdorf</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="https://lukasstruppek.github.io/" target="_blank">Lukas Struppek</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://ml-research.github.io/people/kkersting/" target="_blank">Kristian Kersting</a>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://adam-dziedzic.com/" target="_blank">Adam Dziedzic</a>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://franziska-boenisch.de/" target="_blank">Franziska Boenisch</a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">German Research Center for Artificial Intelligence (DFKI),<br> Technical University of Darmstadt, <br>Hessian Center for AI, <br>CISPA Helmholtz Center for Information Security<br></span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution <br></small></span>
+                  </div>
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2406.02366" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/ml-research/localizing_memorization_in_diffusion_models" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2406.02366" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/overview.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <b>TL;DR:</b> Text-to-image diffusion models can memorize and reproduce sensitive or copyrighted training data, raising privacy and intellectual property concerns. 
+            NeMo addresses this by localizing and deactivating specific neurons responsible for memorization, thereby preventing data replication, enhancing output diversity, and promoting responsible diffusion model deployment.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Diffusion models (DMs) produce very detailed and high-quality images. Their power results from extensive training on large amounts of data, usually scraped from the internet without proper attribution or consent from content creators. Unfortunately, this practice raises privacy and intellectual property concerns, as DMs can memorize and later reproduce their potentially sensitive or copyrighted training images at inference time. Prior efforts prevent this issue by either changing the input to the diffusion process, thereby preventing the DM from generating memorized samples during inference, or removing the memorized data from training altogether. While those are viable solutions when the DM is developed and deployed in a secure and constantly monitored environment, they hold the risk of adversaries circumventing the safeguards and are not effective when the DM itself is publicly released. To solve the problem, we introduce NeMo, the first method to localize memorization of individual data samples down to the level of neurons in DMs' cross-attention layers. Through our experiments, we make the intriguing finding that in many cases, single neurons are responsible for memorizing particular training samples. By deactivating these memorization neurons, we can avoid the replication of training data at inference time, increase the diversity in the generated outputs, and mitigate the leakage of private and copyrighted data. In this way, our NeMo contributes to a more responsible deployment of DMs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Concept -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Overview of NeMo</h2>
+        <div class="content has-text-justified">
+           <img src="static/images/concept.png" alt="Overview of NeMo" style="width:100%;" class="center"/>
+          <p>
+            <br>
+            For memorized prompts, we observe that the same (original training)
+            image is constantly generated independently of the initial random seed. In the initial stage, NeMo first identifies candidate neurons potentially
+            responsible for the memorization based on out-of-distribution activations. In a refinement step,
+            NeMo detects the memorization neurons from the candidate set by leveraging the noise similarities
+            during the first denoising step. <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Concept -->
+
+
+
+<!-- Noise Computation -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Quantifying Memorization Strength</h2>
+        <div class="content has-text-justified">
+           <img src="static/images/noise_computation.png" alt="Computation of our metric for quantifying memorization strength" style="width:100%;" class="center"/>
+          <p>
+            <br>
+            NeMo computes the memorization strength by analyzing the consistency of the denoising trajectory. 
+            Starting with two randomly initialized noise images, we perform a single denoising step and calculate the difference between the predicted and initial noise. 
+            The Structural Similarity Index (SSIM) between these differences quantifies memorization, with higher similarity indicating stronger memorization. <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Noise Computation -->
+
+
+<!-- Noise Computation -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Visualizing Noise Differences</h2>
+        <div class="content has-text-justified">
+           <figure><img src="static/images/noise_memorized.png" alt="Noise difference for memorized prompts" style="width:100%;" class="center"/><figcaption><b>Memorized Prompt</b></figcaption></figure>
+           <figure><img src="static/images/noise_unmemorized.png" alt="Noise difference for non-memorized prompts" style="width:100%;" class="center"/><figcaption><b>Non-Memorized Prompt</b></figcaption></figure>
+          <p>
+            We visualize the normalized noise differences between the predicted noise (after the first denoising step) and the initial Gaussian noise, using four random seeds. 
+            The top row shows the final generated images. For memorized prompts (top), noise differences reveal low diversity and hint at the final image's structure, while for non-memorized prompts (bottom), 
+            the noise differences lack clear structure and vary significantly across initial noise samples. <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Noise Computation -->
+
+
+<!-- Visual Results -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Impact of Deactivating Memorization Neurons</h2>
+        <div class="content has-text-justified">
+           <figure><img src="static/images/image_samples.png" alt="Noise difference for memorized prompts" style="width:100%;" class="center"/><figcaption><b>Verbatim Memorization</b></figcaption></figure>
+           <figure><img src="static/images/image_samples_tm.png" alt="Noise difference for non-memorized prompts" style="width:100%;" class="center"/><figcaption><b>Template Prompt</b></figcaption></figure>
+          <p>
+            The top rows display images generated with verbatim memorized and template memorized prompts, closely replicating training data. 
+            In contrast, the bottom row shows that deactivating specific memorization neurons enhances diversity and mitigates memorization. 
+            Remarkably, only a small number of neurons are responsible for triggering memorization, as indicated by the counts in the boxes. <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Visual Results -->
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{hintersdorf24nemo,
+        author = {Hintersdorf, Dominik and Struppek, Lukas and Kersting, Kristian and Dziedzic, Adam and Boenisch, Franziska},
+        title = {Finding NeMo: Localizing Neurons Responsible For Memorization in Diffusion Models},
+        booktitle = {Conference on Neural Information Processing Systems (NeurIPS)},
+        year = {2024},
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
