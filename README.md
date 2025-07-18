@@ -1,4 +1,5 @@
 # _Finding NeMo: Localizing Neurons Responsible For Memorization in Diffusion Models_
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/ml-research/localizing_memorization_in_diffusion_models)
   <center>
   <img src="images/concept.jpg" alt="Concept"  height=230>
   </center>
